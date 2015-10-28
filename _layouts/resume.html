@@ -11,7 +11,7 @@
 
     <!-- You can turn off the avatar in _config.yml by setting to false -->
     {% if site.resume_avatar == 'true' %}
-    <img src="images/avatar.jpg" alt="my photo" class="avatar">
+    <img src="images/avatar.jpg" alt="Guillaume Cusnieux" class="avatar">
     {% endif %}
 
     <!-- Your name is defined in the _config.yml file -->
@@ -28,18 +28,19 @@
 
     <div class="executive-summary">
       <p>
-        En tant qu'artisan du numérique, je suis dévoué à fabriquer des applications de qualité, et à choisir les technologies adaptées aux projets.
-        Aujourd'hui, je suis en quête d'un nouveau défi dans la région de <a target="_blank" href="https://goo.gl/maps/mmeHMdVfJLm">Bordeaux</a>
-        ou en télétravail partiel.
+        Après 7 ans de métier, essentiellement dans le monde commercial de l’Internet, j’aimerai m’orienter vers un poste dont les valeurs seraient autres.
+        <br/>
+        Artisan du numérique, je suis dévoué à fabriquer des applications de qualité, à choisir les technologies adaptées aux projets,
+        à oeuvrer pour le logiciel libre, à promouvoir un produit ou service auquel je crois, à partager et à apprendre de mes futurs collègues.
+        <br/>
+        <b>Aujourd'hui, je suis en quête d'un nouveau défi à Bordeaux ou en <u>télétravail partiel</u>.</b>
       </p>
-    </div>
 
-    {% if site.resume_looking_for_work == 'yes' %}
-    <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contactez-moi</a>
-    {% elsif site.resume_looking_for_work == 'no' %}
-    <a class="contact-button not-looking">I'm not looking for work right now.</a>
-    {% else %}
-    {% endif %}
+      {% if site.resume_looking_for_work == 'yes' %}
+      <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contactez-moi</a>
+      {% endif %}
+
+    </div>
 
   </header>
 
@@ -52,50 +53,39 @@
 
     <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
     <div class="resume-item">
-      <h3 class="resume-item-title">Ineat Conseil</h3>
-      <h4 class="resume-item-details">Développeur &bull; Depuis Septembre, 2010</h4>
+      <h3 class="resume-item-title">Ineat Conseil, Lille</h3>
+      <h4 class="resume-item-details">Architecte applicatif &bull; Depuis Septembre, 2010</h4>
 
       <p class="resume-item-copy">
-        Expériences dans différents secteurs d’activité comme l'assurance, la grande distribution, les télécommunications, le textile ou encore le numérique.
+        Des expériences et des rencontres enrichissantes dans différents secteurs d’activité comme l'assurance, la grande distribution, les télécommunications, le textile ou encore le numérique.
       </p>
 
       <p class="resume-item-copy">
-        Réalisations souvent en rapport avec l'expérience utilisateur: applications de gestion, CMS sur mesure, médiathèques, portails intranet, tableaux de bord.
+        Des réalisations souvent en rapport avec l'expérience utilisateur: applications de gestion, CMS sur mesure, médiathèques, portails intranet, tableaux de bord.
       </p>
 
       <p class="resume-item-copy">
-        Mais aussi la définition d'API, l'implémentation de protocoles de communication avec des objets connectés, la mise en place d'intégration continue,
-        l'installation de clusters, le packaging de logiciels...
+        Mais aussi des travaux sur des problématiques moins visibles comme la définition d'API, l'implémentation de protocoles de communication avec des objets connectés,
+        la mise en place d'intégration continue, l'installation de clusters, le packaging de logiciels...
       </p>
 
       <p class="resume-item-copy">
-        Interventions dans différents rôles :
+        Au fil des missions, j'ai revêtu les costumes de développeur, d'architecte applicatif, de leader technique, de scrum master et de consultant avant-vente.
       </p>
-
-      <ul class="resume-item-list">
-        <li>Développeur</li>
-        <li>Architecte applicatif</li>
-        <li>Conseil et expertise ECM/WEB</li>
-        <li>Scrum master</li>
-        <li>Tech lead</li>
-      </ul>
-      <p class="resume-item-copy"></p>
 
     </div>
     <!-- end of resume-item -->
 
     <!-- another resume item -->
     <div class="resume-item">
-      <h3 class="resume-item-title">Aptelia</h3>
+      <h3 class="resume-item-title">Aptelia, Lille</h3>
       <h4 class="resume-item-details">Développeur &bull; Mars, 2008 &mdash; Août, 2010</h4>
 
       <p class="resume-item-copy">
-        Mes premiers pas sur les problématiques liées à l'expérience utilisateur.
+        Mon apprentissage des méthodes agiles, l'ouverture au monde du logiciel libre, la compréhension des métiers,
+        les échanges avec les utilisateurs sur l'ergonomie ont confirmé mon intérêt pour le développement de logiciels.
       </p>
 
-      <p class="resume-item-copy">
-        La découverte de l'open source et des méthodes agiles (TDD, DDD, BDD).
-      </p>
 
     </div>
     <!-- end of resume-item -->
@@ -126,7 +116,7 @@
     </div>
 
     <div class="resume-item">
-      <h3 class="resume-item-title">Baccalaureat scientifique</h3>
+      <h3 class="resume-item-title">Baccalauréat scientifique</h3>
       <h4 class="resume-item-details">Lycée Marguerite de Flandres &bull; 2001 &mdash; 2004</h4>
 
       <p class="resume-item-copy">CREPS de Wattignies, sport-étude hockey sur gazon.</p>
@@ -180,7 +170,7 @@
     <div class="resume-item">
       <h4 class="resume-item-details">Méthodes</h4>
 
-      <p class="resume-item-copy">Scrum, TDD, DDD, BDD.</p>
+      <p class="resume-item-copy">Scrum, TDD.</p>
     </div>
 
     <div class="resume-item">
