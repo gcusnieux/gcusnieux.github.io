@@ -13,13 +13,15 @@ resume_avatar:                  "true"
 resume_name:                    "Guillaume Cusnieux"
 resume_title:                   "Développeur logiciel"
 resume_contact_email:
-  "gcusnieux+github@gmail.com"
+  "gcusnieux@gmail.com"
+resume_contact_phone:
+  "+33678382572"
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
 # or remove the resume_looking_for_work option entirely
 # to leave blank
-resume_looking_for_work:        "yes"
+resume_looking_for_work:        "no"
 
 # Decide which sections to use
 # comment out to hide (Experience is not shown
@@ -29,7 +31,7 @@ resume_section_projects:        false
 resume_section_skills:          true
 resume_section_recognition:     false
 resume_section_links:           false
-resume_section_associations:    true
+resume_section_associations:    false
 
 # Resume social links
 # uncomment the options you wish to display, and add your own URL

@@ -24,6 +24,7 @@
 
       <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
       {% include icon-links.html %}
+  
     </div>
 
     <div class="executive-summary">
@@ -38,6 +39,11 @@
 
       {% if site.resume_looking_for_work == 'yes' %}
       <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contactez-moi</a>
+
+      {% else %}
+
+      Je reste à votre disposition pour tout complément d'information par mail <a href="mailto:{{ site.resume_contact_email }}" >{{ site.resume_contact_email }}</a> ou par téléphone  <a href="tel:{{ site.resume_contact_phone }}" >{{ site.resume_contact_phone }}</a>.
+
       {% endif %}
 
     </div>
@@ -52,40 +58,198 @@
     </header>
 
     <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-    <div class="resume-item">
-      <h3 class="resume-item-title">Ineat Conseil, Lille</h3>
-      <h4 class="resume-item-details">Architecte applicatif &bull; Depuis Septembre, 2010</h4>
+   <div class="resume-item">
+      <h3 class="resume-item-title">Client *Confidentiel* avec Ineat Conseil </h3>
+      <h4 class="resume-item-details">Scrum Master, Tech Lead &bull; Août, 2015 &mdash; Décembre, 2015</h4>
 
       <p class="resume-item-copy">
-        Des expériences et des rencontres enrichissantes dans différents secteurs d’activité comme l'assurance, la grande distribution, les télécommunications, le textile ou encore le numérique.
-      </p>
+      Usine à sites basée sur la plateforme open-source Nuxeo et portail extranet et intranet single-page.
+      <ul>
+        <li>Définition de l’architecture</li>
+        <li>PoC Cadrage fonctionnel et technique</li>
+        <li>Coach technique</li>
+        <li>Animation des démos, rétrospectives</li>
+        <li>Déploiement continu, Gitflow </li>
+        <li>Configuration des serveurs</li>
+      </ul>
 
-      <p class="resume-item-copy">
-        Des réalisations souvent en rapport avec l'expérience utilisateur: applications de gestion, CMS sur mesure, médiathèques, portails intranet, tableaux de bord.
-      </p>
-
-      <p class="resume-item-copy">
-        Mais aussi des travaux sur des problématiques moins visibles comme la définition d'API, l'implémentation de protocoles de communication avec des objets connectés,
-        la mise en place d'intégration continue, l'installation de clusters, le packaging de logiciels...
-      </p>
-
-      <p class="resume-item-copy">
-        Au fil des missions, j'ai revêtu les costumes de développeur, d'architecte applicatif, de leader technique, de scrum master et de consultant avant-vente.
+         <p class="resume-item-copy">Java 8/Nuxeo/NodeJS/Gulp/Jade/AngularJS/PostgreSQL/Jenkins/Git/Ansible</p>
       </p>
 
     </div>
     <!-- end of resume-item -->
 
-    <!-- another resume item -->
-    <div class="resume-item">
-      <h3 class="resume-item-title">Aptelia, Lille</h3>
-      <h4 class="resume-item-details">Développeur &bull; Mars, 2008 &mdash; Août, 2010</h4>
+    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <div class="resume-item page-break">
+      <h3 class="resume-item-title">Client *Confidentiel* avec Ineat Conseil </h3>
+      <h4 class="resume-item-details">Architecte applicatif &bull; Depuis Mars, 2015 </h4>
 
       <p class="resume-item-copy">
-        Mon apprentissage des méthodes agiles, l'ouverture au monde du logiciel libre, la compréhension des métiers,
-        les échanges avec les utilisateurs sur l'ergonomie ont confirmé mon intérêt pour le développement de logiciels.
-      </p>
 
+      Refonte d’un site d’auto-publication et de vente de livres en ligne. 
+
+      <ul>
+        <li>Réalisation d’une API REST et d’un client php spécifique. </li>
+        <li>Implémentation des différentes transformations et contrôles des fichiers pour l’impression du livre.</li>
+        <li>Mise en place de processus de validation.</li>
+        <li>Cadrage fonctionnel et technique</li>
+        <li>Coach technique, Déploiement continu, Gitflow, Configuration des serveurs</li>
+        <li>Réalisation, déploiement et installation Migration des données</li>
+      </ul>
+
+      <p class="resume-item-copy">Java 8/Nuxeo/Php/PostgreSQL/ElasticSearch/Jenkins/Git/Vagrant/Docker</p>
+
+    </div>
+    <!-- end of resume-item -->
+
+    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <div class="resume-item">
+      <h3 class="resume-item-title">VILOGIA avec Ineat Conseil </h3>
+      <h4 class="resume-item-details">Expert ECM &bull; Décembre, 2014 &mdash; Mars, 2015</h4>
+
+      <p class="resume-item-copy">
+
+        Accompagnement fonctionnel et technique à la mise en place d’une solution de remplacement d’un disque de partage par une plateforme de gestion électronique des documents. Implémentation des processus de travail des différents services. 
+        Packaging de la solution en RPM. Définition de l’architecture et installation du cluster.
+        <ul>
+          <li>Cadrage fonctionnel et technique</li>
+          <li>Définition des "users stories" </li>
+          <li>Réalisation, déploiement</li>
+          <li>Installation du cluster</li>
+          <li>Migration des donneés (+ 3To)</li>
+        </ul>
+
+    </div>
+    <!-- end of resume-item -->
+
+    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <div class="resume-item">
+      <h3 class="resume-item-title">GENERALI avec Ineat Conseil </h3>
+      <h4 class="resume-item-details">Architecte applicatif &bull; Sepetembre, 2014  &mdash; Novembre, 2014</h4>
+
+      <p class="resume-item-copy">
+
+        Audit du portail extranet qui permet de mettre à disposition les dernières informations et produits disponibles pour les agents et courtiers.
+        <ul>
+          <li>Audit fonctionnel et technique </li>
+          <li>Etude de choix, de faisabilité</li>
+          <li>Proof of Concept</li>
+          <li>Soutenance</li>
+        </ul>
+
+         <p class="resume-item-copy">JAVA/JS/Nuxeo/Drupal/Oracle/ElasticSearch/Vagrant/Docker</p>
+
+    </div>
+    <!-- end of resume-item -->
+
+    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <div class="resume-item page-break">
+      <h3 class="resume-item-title">ADEO avec Ineat Conseil </h3>
+      <h4 class="resume-item-details">Scrum Master, Développeur &bull; Avril, 2013  &mdash; Septembre, 2014</h4>
+
+      <p class="resume-item-copy">
+        Au sein de différentes directions, mise en place d'outils métiers internationaux et d'un outil de gestion de contenus spécifique.
+        <ul>
+          <li>Cadrage fonctionnel et technique</li>
+          <li>Définition d’architecture, PoC</li>
+          <li>Formation d’équipe</li>
+          <li>DevOps</li> 
+        </ul>
+
+        <p class="resume-item-copy">Java/HTML/JS/SASS/AngularJS/Spring/Grunt/Karma/Maven/Jenkins/Git/Thymeleaf</p>
+
+    </div>
+    <!-- end of resume-item -->
+
+    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <div class="resume-item">
+      <h3 class="resume-item-title">LEROY MERLIN avec Ineat Conseil </h3>
+      <h4 class="resume-item-details">Développeur, Expert Web/ECM &bull; Septembre, 2012  &mdash; Mars, 2013</h4>
+
+      <p class="resume-item-copy">
+        Dans la grande distribution les opérations commerciales sont courantes. Le souhait de les informatiser était important afin de capitaliser et de partager les éléments de communication entre les différents magasins. Réalisation d’un calendrier interactif où il est possible de visualiser, gérer et comparer les opérations commerciales.
+
+        <ul>
+          <li>Expertise Web/ECM</li>
+          <li>DevOps</li>
+          <li>Fonctionnement en mode Agile</li>
+        </ul>
+
+        <p class="resume-item-copy">JAVA/JS/Nuxeo/jQuery/AngularJS/Jenkins/Git</p>
+
+    </div>
+    <!-- end of resume-item -->
+
+    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <div class="resume-item">
+      <h3 class="resume-item-title">LEROY MERLIN avec Ineat Conseil </h3>
+      <h4 class="resume-item-details">Développeur WEB &bull; Juin, 2012  &mdash; Août, 2012</h4>
+
+      <p class="resume-item-copy">
+      Réalisation d’un site intranet single-page pour la gestion d’un référentiel de projets.
+      <ul>
+        <li>Intervention d’expertise sur le framework Play !</li>
+        <li>Conception et réalisation du framework Javascript sous forme de plugins jQuery</li>
+        <li>Contribution à la communauté, d’un plugin permettant d’executer des tests unitaires JS.</li>
+        <li>Fonctionnement en mode Agile</li>
+      </ul>
+      
+      <p class="resume-item-copy">JAVA/JS/Scala/jQuery/Play Framework/Jenkins/Git</p>
+
+    </div>
+    <!-- end of resume-item -->
+
+    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <div class="resume-item page-break">
+      <h3 class="resume-item-title">NORDNET avec Ineat Conseil </h3>
+      <h4 class="resume-item-details">Chef de projet technique &bull; Septembre, 2010  &mdash; Juin, 2012</h4>
+
+      <p class="resume-item-copy">
+
+      En charge de projets développés en offshore :
+      <ul>
+        <li>Rédaction des spécifications techniques</li>
+        <li>Découpage en tâches techniques</li>
+        <li>Evaluation des charges  </li>
+        <li>Suivi des développements</li>
+        <li>Contrôle de la qualité</li>
+        <li>Création d'outils</li>
+      </ul>
+      
+      <p class="resume-item-copy">JAVA/JEE/UML/JBoss/SQL/Spring/Hibernate/Maven/Hudson/Visual Paradigm</p>
+
+    </div>
+    <!-- end of resume-item -->
+
+
+    <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+   <div class="resume-item">
+      <h3 class="resume-item-title">LEROY MERLIN avec Aptelia </h3>
+      <h4 class="resume-item-details">Developpeur Agile &bull; Novembre, 2008  &mdash; Septembre, 2010</h4>
+
+      <p class="resume-item-copy">
+
+      Portail intranet collaboratif reposant sur la plateforme open source Nuxeo.
+      <ul>
+
+        <li>Animation fonctionnelle, aide à la rédaction de « Users Stories »</li>
+        <li>Découpage des stories en tâches techniques et estimation des délais</li>
+        <li>Conception, développements (Pair programming, TDD)</li>
+        <li>Gestion de la mise en recette et en production de l’application</li>
+      </ul>
+
+    </p>
+      <p class="resume-item-copy">
+
+      Projet HI42
+      Conception et développement d’une application permettant d’analyser les chiffres clés des magasins et des régions en les stockant dans une base de données. Mise à disposition d’une API REST afin d’alimenter un gadget de type iGoogle. Création d’une interface compatible avec les smartphones.
+      <ul>
+        <li>Animation fonctionnelle</li>
+        <li>Conception, développements, recette</li>
+        <li>Gestion de la mise en recette et en production de l’application</li>
+      </ul>
+
+    </p>
 
     </div>
     <!-- end of resume-item -->
@@ -95,7 +259,7 @@
 
   {% if site.resume_section_education %}
   <!-- begin Education -->
-  <section class="content-section">
+  <section class="content-section page-break">
 
     <header class="section-header">
       <h2>Formations</h2>
