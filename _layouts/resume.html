@@ -24,22 +24,18 @@
 
       <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
       {% include icon-links.html %}
-  
+
     </div>
 
     <div class="executive-summary">
       <p>
-        Après 7 ans de métier, essentiellement dans le monde commercial de l’Internet, j’aimerai m’orienter vers un poste dont les valeurs seraient autres.
-        <br/>
         Artisan du numérique, je suis dévoué à fabriquer des applications de qualité, à choisir les technologies adaptées aux projets,
         à oeuvrer pour le logiciel libre, à promouvoir un produit ou service auquel je crois, à partager et à apprendre de mes futurs collègues.
         <br/>
-        <b>Aujourd'hui, je suis en quête d'un nouveau défi à Bordeaux ou en <u>télétravail partiel</u>.</b>
       </p>
 
       {% if site.resume_looking_for_work == 'yes' %}
       <a href="mailto:{{ site.resume_contact_email }}" class="contact-button">Contactez-moi</a>
-
       {% else %}
 
       Je reste à votre disposition pour tout complément d'information par mail <a href="mailto:{{ site.resume_contact_email }}" >{{ site.resume_contact_email }}</a> ou par téléphone  <a href="tel:{{ site.resume_contact_phone }}" >{{ site.resume_contact_phone }}</a>.
@@ -50,12 +46,66 @@
 
   </header>
 
-  <!-- begin Experience -->
+   {% if site.resume_section_skills %}
+  <!-- begin Skills -->
   <section class="content-section">
+
+    <header class="section-header">
+      <h2>Compétences</h2>
+    </header>
+
+    <div class="resume-item">
+      <h4 class="resume-item-details">Technologies</h4>
+
+      <p class="resume-item-copy">Apache, CSS, Docker, git, HTML, Java 8, Maven, JavaScript, ECMAScript 6, JEE, Jetty, Neo4J, NodeJS, Npm, PHP, SQL, Tomcat, UML, Unix, Vagrant...</p>
+    </div>
+
+    <div class="resume-item">
+      <h4 class="resume-item-details">Méthodes</h4>
+
+      <p class="resume-item-copy">Scrum, Test Driven Development...</p>
+    </div>
+
+    <div class="resume-item">
+      <h4 class="resume-item-details">Quelques frameworks</h4>
+
+      <p class="resume-item-copy">AngularJS, EmberJS, D3.js, Nuxeo, Play, Spring, Symphony...</p>
+    </div>
+
+  </section>
+  <!-- end Skills -->
+  {% endif %}
+
+  <!-- begin Experience -->
+  <section class="content-section page-break">
 
     <header class="section-header">
       <h2>Expériences</h2>
     </header>
+
+      <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+      <div class="resume-item">
+          <h3 class="resume-item-title">Acteur du secteur de la grande distribution</h3>
+          <h4 class="resume-item-details">Architecte Applicatif &bull; Depuis Mars, 2016</h4>
+
+          <p class="resume-item-copy">
+              Intégration à une équipe d'architectes dans l'objectif de définir les processus d'industrialisation de développements de l'ensemble des applications des centrales d'achats du groupe.
+
+          <ul>
+              <li>Définition de l’architecture</li>
+              <li>Définition des processus de développements</li>
+              <li>Définition des normes de qualités et de la stratégie de test</li>
+              <li>Construction d'un Framework Front-End autour d'EmberJS</li>
+              <li>Mise en place de l'intégration continue et des processus de build et de déploiement</li>
+              <li>Configuration automatique des serveurs</li>
+              <li>Contribution OpenSource</li>
+          </ul>
+
+          <p class="resume-item-copy">Java 8/EmberJs/ECMAScript 6/NodeJS/Gulp/Sass/nginx/GitLab/Jenkins/Docker/DDD</p>
+          </p>
+
+      </div>
+      <!-- end of resume-item -->
 
     <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
    <div class="resume-item">
@@ -63,17 +113,27 @@
       <h4 class="resume-item-details">Scrum Master, Tech Lead &bull; Août, 2015 &mdash; Décembre, 2015</h4>
 
       <p class="resume-item-copy">
-      Usine à sites basée sur la plateforme open-source Nuxeo et portail extranet et intranet single-page.
+      Coaching d'une équipe de 6 personnes pour la réalisation d'une usine à sites et de portails extranet client/fournisseur en "single-page application".
+
       <ul>
         <li>Définition de l’architecture</li>
         <li>PoC Cadrage fonctionnel et technique</li>
-        <li>Coach technique</li>
+        <li>Coach technique, pratique du TDD, revue de "pull requests"</li>
         <li>Animation des démos, rétrospectives</li>
         <li>Déploiement continu, Gitflow </li>
         <li>Configuration des serveurs</li>
       </ul>
 
-         <p class="resume-item-copy">Java 8/Nuxeo/NodeJS/Gulp/Jade/AngularJS/PostgreSQL/Jenkins/Git/Ansible</p>
+      <p>La gestion éditoriale s'appuie sur la plateforme open-source Nuxeo grâce à des developpements spécifiques (extension de l'Api REST native, simplification de la publication, gestion des rédirections, composition de pages, gestion de menus, gestion des versions, prévisualisation...)</p>
+
+      <p>Mise en place d'un serveur NodeJS afin de consommer, d'agréger et de mettre en cache les données éditoriales et des données provenant d'autres progiciels via SOAP.</p>
+
+      <p>Génération de sites statiques avec NodeJs, Jade et Sass.
+      Développements des portails en AngularJS, consommant les contenus éditoriaux et métiers du serveur NodeJS.
+      </p>
+      <p>Gestion des certificats HTTPS et du cache via nginx.</p>
+
+      <p class="resume-item-copy">Java 8/Nuxeo/ECMAScript 6/NodeJS/Gulp/Jade/Sass/AngularJS/nginx/GitLab/Jenkins</p>
       </p>
 
     </div>
@@ -82,11 +142,11 @@
     <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
    <div class="resume-item page-break">
       <h3 class="resume-item-title">Acteur du secteur de l'édition et de l'impression</h3>
-      <h4 class="resume-item-details">Architecte applicatif &bull; Depuis Mars, 2015 </h4>
+      <h4 class="resume-item-details">Architecte applicatif &bull; De Mars, 2015 &mdash; Févier, 2016 </h4>
 
       <p class="resume-item-copy">
 
-      Refonte d’un site d’auto-publication et de vente de livres en ligne. 
+      Refonte d’un site d’auto-publication et de vente de livres en ligne.
 
       <ul>
         <li>Réalisation d’une API REST et d’un client php spécifique. </li>
@@ -94,6 +154,7 @@
         <li>Mise en place de processus de validation.</li>
         <li>Cadrage fonctionnel et technique</li>
         <li>Coach technique, Déploiement continu, Gitflow, Configuration des serveurs</li>
+        <li>Packaging de la solution en RPM.</li>
         <li>Réalisation, déploiement et installation Migration des données</li>
       </ul>
 
@@ -109,7 +170,7 @@
 
       <p class="resume-item-copy">
 
-        Accompagnement fonctionnel et technique à la mise en place d’une solution de remplacement d’un disque de partage par une plateforme de gestion électronique des documents. Implémentation des processus de travail des différents services. 
+        Accompagnement fonctionnel et technique à la mise en place d’une solution de remplacement d’un disque de partage par une plateforme de gestion électronique des documents. Implémentation des processus de travail des différents services.
         Packaging de la solution en RPM. Définition de l’architecture et installation du cluster.
         <ul>
           <li>Cadrage fonctionnel et technique</li>
@@ -149,11 +210,13 @@
 
       <p class="resume-item-copy">
         Au sein de différentes directions, mise en place d'outils métiers internationaux et d'un outil de gestion de contenus spécifique.
+
         <ul>
           <li>Cadrage fonctionnel et technique</li>
           <li>Définition d’architecture, PoC</li>
-          <li>Formation d’équipe</li>
-          <li>DevOps</li> 
+          <li>Coaching technique, ensignement TDD</li>
+          <li>Formation d'une équipe de 3 personnes</li>
+          <li>DevOps</li>
         </ul>
 
         <p class="resume-item-copy">Java/HTML/JS/SASS/AngularJS/Spring/Grunt/Karma/Maven/Jenkins/Git/Thymeleaf</p>
@@ -193,7 +256,7 @@
         <li>Contribution à la communauté, d’un plugin permettant d’executer des tests unitaires JS.</li>
         <li>Fonctionnement en mode Agile</li>
       </ul>
-      
+
       <p class="resume-item-copy">JAVA/JS/Scala/jQuery/Play Framework/Jenkins/Git</p>
 
     </div>
@@ -215,7 +278,7 @@
         <li>Contrôle de la qualité</li>
         <li>Création d'outils</li>
       </ul>
-      
+
       <p class="resume-item-copy">JAVA/JEE/UML/JBoss/SQL/Spring/Hibernate/Maven/Hudson/Visual Paradigm</p>
 
     </div>
@@ -317,35 +380,7 @@
   <!-- end Projects -->
   {% endif %}
 
-  {% if site.resume_section_skills %}
-  <!-- begin Skills -->
-  <section class="content-section">
 
-    <header class="section-header">
-      <h2>Compétences</h2>
-    </header>
-
-    <div class="resume-item">
-      <h4 class="resume-item-details">Technologies</h4>
-
-      <p class="resume-item-copy">Apache, CSS, Docker, git, HTML, JAVA, JavaScript, JEE, Jetty, Neo4J, Node, PHP, SQL, Tomcat, UML, Unix, Vagrant.</p>
-    </div>
-
-    <div class="resume-item">
-      <h4 class="resume-item-details">Méthodes</h4>
-
-      <p class="resume-item-copy">Scrum, TDD.</p>
-    </div>
-
-    <div class="resume-item">
-      <h4 class="resume-item-details">Quelques frameworks</h4>
-
-      <p class="resume-item-copy">AngularJS, D3.js, Nuxeo, Play, Spring, Symphony...</p>
-    </div>
-
-  </section>
-  <!-- end Skills -->
-  {% endif %}
 
   {% if site.resume_section_recognition %}
   <!-- begin Recognition -->
